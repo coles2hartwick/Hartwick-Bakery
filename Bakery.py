@@ -4,7 +4,7 @@ Cookies = []
 Candy = []
 
 
-def cookie_input():
+def cookie_input():  # gives the user the oppurtunity to fill the list
     m = 1
     for i in range(0, 6):
         month = int(input(f"Please enter number of cookies for month {m}"))
@@ -12,7 +12,7 @@ def cookie_input():
         m = m + 1
 
 
-def candy_input():
+def candy_input():  # gives the user the oppurtunity to fill the lsit
     m = 1
     for i in range(0, 6):
         month = int(input(f"Please enter number of candies for month {m}"))
@@ -20,7 +20,7 @@ def candy_input():
         m = m + 1
 
 
-def average_cookie_sale():
+def average_cookie_sale():  # finds the average between all of the months
     total = 0
     for cookie in Cookies:
         total = cookie + total
@@ -29,7 +29,7 @@ def average_cookie_sale():
     return average
 
 
-def average_candy_sale():
+def average_candy_sale():  # finds the average between all of the months
     total = 0
     for candies in Candy:
         total = candies + total
@@ -38,7 +38,7 @@ def average_candy_sale():
     return average
 
 
-def max_cookie():
+def max_cookie():  # finds the max cookie sale month
     big = 0
     for cookie in Cookies:
         if cookie > big:
@@ -46,7 +46,7 @@ def max_cookie():
     print(big)
 
 
-def max_candy():
+def max_candy():  # finds the max candy sale month
     big = 0
     for candies in Candy:
         if candies > big:
@@ -54,7 +54,7 @@ def max_candy():
     print(big)
 
 
-def min_cookie():
+def min_cookie():  # finds the min cookie sale month
     small = 1000
     for cookie in Cookies:
         if small > cookie:
@@ -62,7 +62,7 @@ def min_cookie():
     print(small)
 
 
-def min_candy():
+def min_candy():  # finds the min candy sale month
     small = 1000
     for candies in Candy:
         if small > candies:
@@ -70,7 +70,15 @@ def min_candy():
     print(small)
 
 
-if average_cookie_sale() > average_candy_sale():
+cookie_input()
+candy_input()
+average_cookie_sale()
+average_candy_sale()
+max_cookie()
+max_candy()
+min_cookie()
+min_candy()
+if average_cookie_sale() > average_candy_sale():  # determines which product is more popular
     print(f"The cookies are more popular at the bakery")
 else:
     print(f"The candies are more popular at the bakery")
