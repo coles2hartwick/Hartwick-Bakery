@@ -4,7 +4,7 @@ Cookies = []
 Candy = []
 
 
-def cookie_input():  # gives the user the oppurtunity to fill the list
+def cookie_input():  # gives the user the opportunity to fill the list
     m = 1
     for i in range(0, 6):
         month = int(input(f"Please enter number of cookies for month {m}"))
@@ -12,7 +12,7 @@ def cookie_input():  # gives the user the oppurtunity to fill the list
         m = m + 1
 
 
-def candy_input():  # gives the user the oppurtunity to fill the lsit
+def candy_input():  # gives the user the opportunity to fill the list
     m = 1
     for i in range(0, 6):
         month = int(input(f"Please enter number of candies for month {m}"))
