@@ -43,7 +43,7 @@ def max_cookie():  # finds the max cookie sale month
     for cookie in Cookies:
         if cookie > big:
             big = cookie
-    print(big)
+    print(f"The max number of cookies in a month is {big}.")
 
 
 def max_candy():  # finds the max candy sale month
@@ -51,7 +51,7 @@ def max_candy():  # finds the max candy sale month
     for candies in Candy:
         if candies > big:
             big = candies
-    print(big)
+    print(f"The max number of candies in a month is {big}.")
 
 
 def min_cookie():  # finds the min cookie sale month
@@ -59,7 +59,7 @@ def min_cookie():  # finds the min cookie sale month
     for cookie in Cookies:
         if small > cookie:
             small = cookie
-    print(small)
+    print(f"The least amount of cookies in a month is {small}.")
 
 
 def min_candy():  # finds the min candy sale month
@@ -67,13 +67,13 @@ def min_candy():  # finds the min candy sale month
     for candies in Candy:
         if small > candies:
             small = candies
-    print(small)
+    print(f"The least amount of cookies in a month is {small}.")
 
 
 cookie_input()
 candy_input()
-average_cookie_sale()
-average_candy_sale()
+print("The average monthly sale of cookies is ", average_cookie_sale())
+print("The average monthly sale of candy is ", average_candy_sale())
 max_cookie()
 max_candy()
 min_cookie()
